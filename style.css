@@ -1,0 +1,371 @@
+/* variables */
+:root{
+    --first-color : #B80C09;
+    --second-color: #01BAEF;
+    --third-color:  #FBFBFF;
+    --fourth-color: #040F16;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+/* navbar */
+.navegacion{
+    background-color:var(--third-color);
+}
+.navegacion hr{
+    color: var(--first-color);
+}
+
+.navbar-icons{
+    display: flex;
+    font-size:20px; 
+}
+.navbar-icons a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: var(--second-color);
+    transition: all .2s ease-in-out;
+}
+.navbar-icons a:hover{
+    transform: scale(120%);
+}
+.btn-search{
+    background:var(--second-color);
+    color: var(--third-color);
+}
+.btn-search:hover{
+    background:#1299be;
+    color: var(--third-color);
+}
+
+/* beneficios */
+.beneficios .beneficio-icono{
+    display: flex;
+    align-items: center;
+   
+}
+.beneficios .beneficio-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.beneficios .beneficio-texto h5{
+    color: var(--second-color);
+}
+
+.beneficios .beneficio-texto p{
+    color: var(--fourth-color);
+}
+.beneficios i{
+    font-size:2em;
+    color: var(--second-color);
+    
+}
+
+
+/* categorias*/
+.categories h4{
+    color:var(--fourth-color);
+}
+.categories .carousel-control-prev{
+    height:60px;
+    width:30px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto 0 auto -50px;
+    border-radius:5px;
+}
+.categories .carousel-control-next{
+    height:60px;
+    width:30px;
+    margin-right:-100px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto -50px auto 0;
+    border-radius:5px;
+}
+.categories .card img{
+    height:80%;
+    width:100%;
+    transition: all .3s ease-in-out;
+}
+.categories .card .card-title{
+    text-align: center;
+    color: var(--fourth-color);
+    transition: all .3s ease-in-out;
+    margin-top:10px;
+}
+.categories .card{
+    height:330px;
+    transition: all .3s ease-in-out;
+    padding:10px;
+}
+.categories .card:hover img{
+    transform: scale(105%);
+}
+.categories .card:hover .card-title{
+    text-align: center;
+    color: var(--second-color);
+    transform: scale(105%);
+}
+
+
+
+/* offers countdown*/
+.countdown-offers .countdown{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--third-color);
+}
+
+.countdown-offers .countdown .col-1{
+    margin:0 10px;
+}
+.countdown-offers .countdown .col-2 h1{
+    background: var(--second-color);
+    border-radius:  10px;
+    font-size:200%;
+}
+
+/* productos populares */
+.popular-products h4{
+    color:var(--fourth-color);
+}
+.popular-products .card{
+    border:none;
+}
+.popular-products .card{
+    height:350px;
+    transition: all .3s ease-in-out;
+    padding:10px;
+}
+.popular-products .card:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+.popular-products .carousel-control-prev{
+    height:60px;
+    width:30px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto 0 auto -50px;
+    border-radius:5px;
+}
+.popular-products .carousel-control-next{
+    height:60px;
+    width:30px;
+    margin-right:-100px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto -50px auto 0;
+    border-radius:5px;
+}
+.popular-products img{
+    height:40%;
+    width:100%;
+    transition: all .3s ease-in-out;
+}
+
+.popular-products .card .card-title{
+    text-align: center;
+    color: var(--fourth-color);
+    transition: all .3s ease-in-out;
+    margin-top:10px;
+}
+
+.popular-products .card:hover .card-title{
+    color: var(--second-color);
+    transform: scale(105%);
+}
+.popular-products .card .estrellas{
+    color:var(--fourth-color);
+}
+.popular-products .card .ex-precio{
+    font-size:1.1em;
+    text-align: end;
+    margin-top:3px;
+    color: var(--fourth-color);
+}
+
+.popular-products .card .precio{
+    color:var(--second-color);
+    font-size:1.3em;
+}
+
+.popular-products .card .addCartButton{
+    background: var(--second-color);
+    color:var(--third-color);
+}
+
+/* advertising */
+.advertising .imagen1{
+    background: url(assets/images/advertising/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height:200px;
+    
+}
+.advertising .imagen2{
+    background: url(assets/images/advertising/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    
+}
+.advertising .imagen3{
+    background: url(assets/images/advertising/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    
+}
+.advertising .imagen4{
+    background: url(assets/images/advertising/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    
+}
+.advertising .imagen5{
+    background: url(assets/images/advertising/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:400px;
+}
+
+/* other-products */
+.other-products h4{
+    color:var(--fourth-color);
+}
+.other-products .card{
+    border:none;
+}
+.other-products .card{
+    height:350px;
+    transition: all .3s ease-in-out;
+    padding:10px;
+}
+.other-products .card:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+.other-products .carousel-control-prev{
+    height:60px;
+    width:30px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto 0 auto -50px;
+    border-radius:5px;
+}
+.other-products .carousel-control-next{
+    height:60px;
+    width:30px;
+    margin-right:-100px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto -50px auto 0;
+    border-radius:5px;
+}
+.other-products img{
+    height:40%;
+    width:100%;
+    transition: all .3s ease-in-out;
+}
+
+.other-products .card .card-title{
+    text-align: center;
+    color: var(--fourth-color);
+    transition: all .3s ease-in-out;
+    margin-top:10px;
+}
+
+.other-products .card:hover .card-title{
+    color: var(--second-color);
+    transform: scale(105%);
+}
+.other-products .card .estrellas{
+    color:var(--fourth-color);
+}
+.other-products .card .ex-precio{
+    font-size:1.1em;
+    text-align: end;
+    margin-top:3px;
+    color: var(--fourth-color);
+}
+
+.other-products .card .precio{
+    color:var(--second-color);
+    font-size:1.3em;
+}
+
+.other-products .card .addCartButton{
+    background: var(--second-color);
+    color:var(--third-color);
+}
+/* FAQ */
+.faq{
+    background: #040F16;
+}
+.faq p{
+    color: #FBFBFF;
+}
+
+/* Contact */
+.contact h2{
+    color: #040F16;
+}
+.contact .btn{
+    background: #040F16;
+    color: #FBFBFF;
+}
+
+
+
+
+/* footer */
+footer{
+    background: #040F16;
+    color: #FBFBFF;
+}
+
+
+/* cart */
+.cart .cart-left .cart-item{
+    color:var(--fourth-color);
+}
+.cart .cart-left .cart-item h4{
+    color:var(--second-color);
+}
+.cart .cart-right .procederButton{
+    background: var(--second-color);
+}
+.cart .cart-right .seguirComprandoButton{
+    background: var(--fourth-color);
+    color:var(--third-color);
+}
