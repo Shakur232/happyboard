@@ -468,16 +468,23 @@ footer{
 
 
 /* media queries */
-@media(max-width:765px){
+@media(max-width:769px){
     .categories-responsive{
         display:block;
     }
     .categories{
         display: none;
     }
+    .logo{
+        width:60px;
+        height:60px;
+    }
+    .logo img{
+        width:65%;
+    }
     
 }
-@media(min-width:765px){
+@media(min-width:769px){
     .categories-responsive{
         display:none;
     }
