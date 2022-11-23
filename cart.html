@@ -14,54 +14,56 @@
     <section class="navegacion">
         <nav class="navbar navbar-expand-md main-menu fixed" style="box-shadow:none">
             <div class="container">
-              <a  href="/">
-                <img src="assets/images/keyboard.png" alt="keyboard-logo" width="20%" height="10%">
+              <a href="/" class="logo" style="width:100px;">
+                <img src="assets/images/keyboard.png" alt="keyboard-logo" width="100%">
               </a>
-          
-              <div class="collapse navbar-collapse">
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <!-- navbar default -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <form class="d-flex my-2 w-50 mx-auto">
                   <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
                   <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
           
-                <div class="navbar-icons">
+                <div class="navbar-icons justify-content-center">
                     <a href=""><i class="fa fa-user"></i></a>
                     <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-cart-shopping"></i></a>
+                    <a href="/cart.html"><i class="fa fa-cart-shopping"></i></a>
                     
                 </div>
               </div>
           
             </div>
-          </nav>
-      
-          <div class="search-bar d-block d-md-none">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <form class="d-flex mb-3 mx-auto">
-                    <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
-                    <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          
-    
+          </nav> 
     </section>
+
+    <!-- breadcrumb -->
+    <section class="breadcrumb-section my-5">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Mi carrito</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
     <!-- cart -->
     <section class="cart">
         <div class="container">
             <h3 class="my-5">Tu carrito</h3>
             <div class="row justify-content-between">
-                <div class="col-7 cart-left">
+                <div class="col-12 col-md-7 cart-left">
                     <div class="row cart-item bg-light p-5 rounded">
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <img src="assets/images/productos-populares/productoPopular-mecanico2.png" width="100%" height="100%">
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <h3>Teclado Gamer Halion Barbarian HA-K655</h3>
                             <p>Teclado mecánico Halion RGB</p>
                             <div class="row mt-3">
@@ -80,10 +82,10 @@
                         </div>
                     </div>
                     <div class="row cart-item mt-3 bg-light p-5 rounded">
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <img src="assets/images/productos-populares/productoPopular-mecanico1.png" width="100%" height="100%">
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <h3>Teclado Razer BlackWidow V3</h3>
                             <p>Teclado mecánico Chroma</p>
                             <div class="row mt-3">
@@ -102,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 cart-right">
+                <div class="col-12 col-md-4 cart-right">
                     <div class="row bg-light rounded p-3">
                         <div class="row">
                             <h3 class="text-center">Pago</h3>

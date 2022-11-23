@@ -38,6 +38,27 @@ const offersCountdown= ()=>{
      
 }
 
+const validarFormularioContacto = ()=>{
+
+}
+
 
 
 offersCountdown();
+
+
+
+
+
+
+/* jquery zoom image */
+$(document).ready(()=>{
+    $('#image').imagezoomsl({zoomrange:[4,4]})
+    
+})
+
+
+
+
+
+

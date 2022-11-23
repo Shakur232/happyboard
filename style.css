@@ -12,6 +12,13 @@
     margin:0px;
     padding:0px;
 }
+ul{
+    list-style: none;
+    padding-left:1rem;
+}
+a{
+    text-decoration: none;
+}
 
 /* navbar */
 .navegacion{
@@ -42,6 +49,16 @@
     background:#1299be;
     color: var(--third-color);
 }
+
+/* breadcrumb */
+
+.breadcrumb-section .breadcrumb li:first-child a{
+    text-decoration:none;
+    color:var(--fourth-color);
+    font-weight: bold;
+    
+}
+
 /* hero slider*/
 
 @media(max-width:516px){
@@ -247,15 +264,16 @@
 
 .popular-products .card .card-title{
     text-align: center;
-    color: var(--fourth-color);
     transition: all .3s ease-in-out;
     margin-top:10px;
+    color: var(--fourth-color);
 }
 
 .popular-products .card:hover .card-title{
     color: var(--second-color);
     transform: scale(105%);
 }
+
 .popular-products .card .estrellas{
     color:var(--fourth-color);
 }
@@ -467,7 +485,7 @@ footer{
 }
 
 
-/* media queries */
+/* media queries index.html*/
 @media(max-width:769px){
     .categories-responsive{
         display:block;
@@ -497,7 +515,7 @@ footer{
     .popular-products-responsive{
         display:block;
     }
-    .popular-products,.other-products{
+    .popular-products,.other-products,.related-products{
         display: none;
     }
 }
@@ -508,4 +526,157 @@ footer{
     .popular-products{
         display: block;
     }
+}
+
+
+/*----------------------------- PRODUCTS PAGE CSS -------------------*/
+
+
+.productos a{
+    text-decoration: none;
+}
+.productos .filtros a{
+    font-weight: bold;
+    color: var(--fourth-color);
+    font-size:20px;
+}
+
+.productos h4{
+    color:var(--fourth-color);
+}
+.productos .card{
+    border:none;
+}
+.productos .card{
+    transition: all .3s ease-in-out;
+    padding:10px;
+}
+.productos .card:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.productos img{
+    height:150px;
+    width:100%;
+    transition: all .3s ease-in-out;
+}
+.productos .card{
+    background: rgba(248,249,250,1);
+}
+.productos .card .card-title{
+    text-align: center;
+    color: var(--fourth-color);
+    transition: all .3s ease-in-out;
+    margin-top:10px;
+}
+
+.productos .card:hover .card-title{
+    color: var(--second-color);
+    transform: scale(105%);
+}
+.productos .card .estrellas{
+    color:var(--fourth-color);
+}
+.productos .card .ex-precio{
+    font-size:1.1em;
+    text-align: end;
+    margin-top:3px;
+    color: var(--fourth-color);
+}
+
+.productos .card .precio{
+    color:var(--second-color);
+    font-size:1.3em;
+}
+
+.productos .card .addCartButton{
+    background: var(--second-color);
+    color:var(--third-color);
+}
+
+
+/* ----------------SINGLE-PRODUCT-PAGE-CSS--------------- */
+
+/* single-product */
+.product .product-info .prices{
+    font-size:2rem;
+}
+.product .product-info span{
+    color:var(--second-color);
+}
+
+/* productos relacionados para comprar */
+.related-products h4{
+    color:var(--fourth-color);
+}
+.related-products .card{
+    border:none;
+}
+.related-products .card{
+    transition: all .3s ease-in-out;
+    padding:10px;
+}
+.related-products .card:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
+.related-products .carousel-control-prev{
+    height:60px;
+    width:30px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto 0 auto -50px;
+    border-radius:5px;
+}
+.related-products .carousel-control-next{
+    height:60px;
+    width:30px;
+    margin-right:-100px;
+    background: var(--second-color);
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    margin: auto -50px auto 0;
+    border-radius:5px;
+}
+.related-products img{
+    height:150px;
+    width:100%;
+    transition: all .3s ease-in-out;
+}
+
+.related-products .card .card-title{
+    text-align: center;
+    color: var(--fourth-color);
+    transition: all .3s ease-in-out;
+    margin-top:10px;
+}
+
+.related-products .card:hover .card-title{
+    color: var(--second-color);
+    transform: scale(105%);
+}
+.related-products .card .estrellas{
+    color:var(--fourth-color);
+}
+.related-products .card .ex-precio{
+    font-size:1.1em;
+    text-align: end;
+    margin-top:3px;
+    color: var(--fourth-color);
+}
+
+.related-products .card .precio{
+    color:var(--second-color);
+    font-size:1.3em;
+}
+
+.related-products .card .addCartButton{
+    background: var(--second-color);
+    color:var(--third-color);
 }
